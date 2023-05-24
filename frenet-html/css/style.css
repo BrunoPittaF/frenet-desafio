@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button-group {
+  max-width: 320px;
+  margin: 3rem 0px;
+  padding: 10px;
+}
+
+.quotation-title {
+  margin: 2rem 1rem;
+}
+
+.title {
+  margin: 2rem 1rem;
+}
+
+.userExist, .userNotExist {
+  display: none;
+}
