@@ -7,7 +7,7 @@ Desafio proposto pela Frenet para vaga de Frontend
 É necessário o pacote [node](https://nodejs.org/en) para rodar o projeto localmente.
 
 ```bash
-cd backend && npm install
+cd backend && npm install && npm run dev
 ```
 
 Devido a api estar retornando erro de cors, criei um pequeno serviço em backend em node para conseguir obter as informações da api e prover o frontend com os dados necessários para a aplicação rodar perfeitamente.
