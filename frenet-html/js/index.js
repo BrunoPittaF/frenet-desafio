@@ -227,7 +227,7 @@ const calcQuotation = () => {
 
     try {
       const response = await createQuote(newQuotation);
-      listQuotes = response.quote.quotations;
+      listQuotes = response.quotations;
       showListQuotes();
     } catch (error) {
       console.error(error);

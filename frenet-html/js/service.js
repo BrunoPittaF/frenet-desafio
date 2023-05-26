@@ -2,7 +2,7 @@ const toastLiveExample = document.querySelector('#liveToast');
 
 export const createUserApi = async (data) => {
   try {
-    const response = await fetch('http://localhost:8080/api/createuser', {
+    const response = await fetch('https://frontend-test.frenet.dev/v1/user', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ export const createUserApi = async (data) => {
 
 export const editUserApi = async (user, name) => {
   try {
-    const response = await fetch(`http://localhost:8080/api/edituser/${name}`, {
+    const response = await fetch(`https://frontend-test.frenet.dev/v1/user/${name}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ export const editUserApi = async (user, name) => {
 export const deleteUserApi = async (name) => {
   console.log(name);
   try {
-    const response = await fetch(`http://localhost:8080/api/deleteuser/${name}`, {
+    const response = await fetch(`https://frontend-test.frenet.dev/v1/user/${name}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ export const deleteUserApi = async (name) => {
 
 export const createQuote = async (newQuote) => {
   try {
-    const response = await fetch('http://localhost:8080/api/quote', {
+    const response = await fetch('https://frontend-test.frenet.dev/v1/quote', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ export const createQuote = async (newQuote) => {
 
 export const getUserFormApi = async (username) => {
   try {
-    const response = await fetch(`http://localhost:8080/api/getuser/${username}`, {
+    const response = await fetch(`https://frontend-test.frenet.dev/v1/user/${username}`, {
       headers: {
         'Content-Type': 'application/json',
       },
